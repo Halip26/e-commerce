@@ -3,17 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins", sans-serif;
 }
+
 body img {
   border-radius: 12px;
 }
+
 .navbar {
   display: flex;
   align-items: center;
   padding: 20px;
-
   padding-top: 30px;
 }
 
@@ -67,6 +69,7 @@ p {
   line-height: 60px;
   margin: 25px 0;
 }
+
 .btn {
   display: inline-block;
   background: #da70d6;
@@ -193,6 +196,7 @@ h4 {
   color: #555;
   font-size: 16px;
 }
+
 .brands {
   margin: 100px auto;
 }
@@ -888,13 +892,11 @@ form a {
   width: 170px;
   height: 100%;
   position: fixed;
-  /*right: 0;*/
-  /*later*/
-  right: -250px; /*initially hidden*/
+  /*untuk hidden*/
+  right: -250px; 
   top: 0;
   background: #da70d6;
   z-index: 2;
-  /* later after menu icon*/
   padding-top: 100px;
   padding-left: 10px;
   color: white;

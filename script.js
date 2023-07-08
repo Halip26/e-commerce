@@ -1,6 +1,6 @@
-var menuBtn = document.getElementById("menuBtn");
-var sideNav = document.getElementById("sideNav");
-var menu = document.getElementById("menu");
+let menuBtn = document.getElementById("menuBtn");
+let sideNav = document.getElementById("sideNav");
+let menu = document.getElementById("menu");
 
 //sideNav.style.right== "-250px";
 menuBtn.onclick = function () {
@@ -17,9 +17,9 @@ function openImg(element) {
   window.open(element.src);
 }
 
-//var t= document.getElementById("text").innerHTML;
-var i = 0;
-var t = "Give yourself \n a new Style this year!";
+//let t= document.getElementById("text").innerHTML;
+let i = 0;
+let t = "Give yourself \n a new Style this year!";
 
 function typing() {
   if (i < t.length) {
