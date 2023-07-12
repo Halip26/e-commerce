@@ -17,15 +17,21 @@ function openImg(element) {
   window.open(element.src);
 }
 
-//let t= document.getElementById("text").innerHTML;
+// typing effect
+let text = document.getElementById("text");
 let i = 0;
-let t = "Give yourself \n a new Style this year!";
+let t = "Give yourself \n a new style this year";
 
 function typing() {
   if (i < t.length) {
-    document.getElementById("text").innerHTML += t.charAt(i);
+    text.innerHTML += t.charAt(i);
     i++;
-    setTimeout(typing, 100);
+    setTimeout(typing, 150);
+  } else {
+    i = 0;
+    text.innerHTML = " ";
+    setTimeout(typing, 200);
   }
 }
+
 typing();
