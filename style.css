@@ -42,12 +42,14 @@ a {
 p {
   color: #555;
 }
+
 .container {
   max-width: 1300px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
 }
+
 .row {
   margin-top: 50px;
   display: flex;
@@ -60,10 +62,12 @@ p {
   flex-basis: 50%;
   min-width: 300px;
 }
+
 .col-2 img {
   max-width: 100%;
   padding: 50px 0;
 }
+
 .col-2 h1 {
   font-size: 50px;
   line-height: 60px;
@@ -121,10 +125,12 @@ p {
   margin-bottom: 50px;
   transition: transform 0.5s;
 }
+
 .col-4 img {
   width: 100%;
   height: 280px;
 }
+
 .title {
   text-align: center;
   margin: 0 auto 80px;
@@ -132,6 +138,7 @@ p {
   line-height: 60px;
   color: #555;
 }
+
 .title::after {
   position: absolute;
   bottom: 0;
@@ -160,9 +167,11 @@ h4 {
 .col-4:hover {
   transform: translateY(-5px);
 }
+
 .testimonial {
   padding-top: 100px;
 }
+
 .testimonial .col-3 {
   text-align: center;
   padding: 40px 20px;
@@ -170,6 +179,7 @@ h4 {
   cursor: pointer;
   transition: transform 0.5s;
 }
+
 .testimonial .col-3 img {
   width: 50px;
   margin-top: 20px;
@@ -200,9 +210,11 @@ h4 {
 .brands {
   margin: 100px auto;
 }
+
 .col-5 {
   width: 160px;
 }
+
 .col-5 img {
   width: 100%;
   cursor: pointer;
@@ -220,13 +232,16 @@ h4 {
   font-size: 14px;
   padding: 60px 0 20px;
 }
+
 .footer p {
   color: #8a8a8a;
 }
+
 .footer h3 {
   color: #fff;
   margin-bottom: 20px;
 }
+
 .footer-col-1,
 .footer-col-2,
 .footer-col-3,
@@ -243,23 +258,28 @@ h4 {
   flex: 1;
   text-align: center;
 }
+
 .footer-col-2 img {
   width: 180px;
   margin-bottom: 20px;
   background-color: white;
   border-radius: 50%;
 }
+
 .footer-col-3,
 .footer-col-4 {
   flex-basis: 12%;
   text-align: center;
 }
+
 ul {
   list-style-type: none;
 }
+
 .app-logo {
   margin-top: 20px;
 }
+
 .app-logo img {
   width: 140px;
 }
@@ -270,9 +290,11 @@ ul {
   height: 1px;
   margin: 20px 0;
 }
+
 .copyright {
   text-align: center;
 }
+
 .menu-icon {
   width: 28px;
   margin-left: 20px;
@@ -290,12 +312,15 @@ select {
   border: 1px solid #da70d6;
   box-shadow: 5px 5px 5px #da70d6;
 }
+
 select:focus {
   color: rgb(141, 38, 138);
 }
+
 .page-btn {
   margin: 0 auto 80px;
 }
+
 .page-btn span {
   text-align: center;
   line-height: 40px;
@@ -306,6 +331,7 @@ select:focus {
   margin-left: 10px;
   cursor: pointer;
 }
+
 .page-btn span:hover {
   background: #da70d6;
   color: #fff;
@@ -325,6 +351,7 @@ table {
   display: flex;
   flex-wrap: wrap;
 }
+
 th {
   text-align: left;
   padding: 5px;
@@ -332,14 +359,17 @@ th {
   background: #da70d6;
   font-weight: normal;
 }
+
 td {
   padding: 10px 5px;
 }
+
 td input {
   width: 40px;
   height: 30px;
   padding: 5px;
 }
+
 td a {
   color: #da70d6;
   font-size: 12px;
@@ -350,6 +380,7 @@ td img {
   height: 80px;
   margin-right: 10px;
 }
+
 .total-price {
   display: flex;
   justify-content: flex-end;
@@ -360,9 +391,11 @@ td img {
   width: 100%;
   max-width: 400px;
 }
+
 td:last-child {
   text-align: right;
 }
+
 th:last-child {
   text-align: right;
 }
@@ -372,6 +405,7 @@ th:last-child {
   padding: 50px 0;
   background: radial-gradient(#fff, #ffd6d6);
 }
+
 .form-container {
   background: #fff;
   width: 300px;
@@ -384,6 +418,7 @@ th:last-child {
   border-radius: 5px;
   box-shadow: 5px 5px 10px #da70d6;
 }
+
 .form-container span {
   font-weight: bold;
   padding: 0 10px;
@@ -397,6 +432,7 @@ th:last-child {
 .form-btn {
   display: inline-block;
 }
+
 .form-container form {
   max-width: 300px;
   padding: 0 20px;
@@ -404,6 +440,7 @@ th:last-child {
   top: 90px;
   transition: transform 1s;
 }
+
 form input {
   width: 100%;
   height: 30px;
@@ -464,17 +501,21 @@ form a {
   width: 20px;
   margin-top: 15px;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins", sans-serif;
 }
+
 body img {
   border-radius: 12px;
 }
+
 .navbar {
   display: flex;
   align-items: center;
@@ -506,12 +547,14 @@ a {
 p {
   color: #555;
 }
+
 .container {
   max-width: 1300px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
 }
+
 .row {
   margin-top: 50px;
   display: flex;
@@ -524,15 +567,18 @@ p {
   flex-basis: 50%;
   min-width: 300px;
 }
+
 .col-2 img {
   max-width: 100%;
   padding: 50px 0;
 }
+
 .col-2 h1 {
   font-size: 50px;
   line-height: 60px;
   margin: 25px 0;
 }
+
 .btn {
   display: inline-block;
   background: #da70d6;
@@ -584,10 +630,12 @@ p {
   margin-bottom: 50px;
   transition: transform 0.5s;
 }
+
 .col-4 img {
   width: 100%;
   height: 280px;
 }
+
 .title {
   text-align: center;
   margin: 0 auto 80px;
@@ -595,6 +643,7 @@ p {
   line-height: 60px;
   color: #555;
 }
+
 .title::after {
   position: absolute;
   bottom: 0;
@@ -623,9 +672,11 @@ h4 {
 .col-4:hover {
   transform: translateY(-5px);
 }
+
 .testimonial {
   padding-top: 100px;
 }
+
 .testimonial .col-3 {
   text-align: center;
   padding: 40px 20px;
@@ -633,6 +684,7 @@ h4 {
   cursor: pointer;
   transition: transform 0.5s;
 }
+
 .testimonial .col-3 img {
   width: 50px;
   margin-top: 20px;
@@ -659,12 +711,15 @@ h4 {
   color: #555;
   font-size: 16px;
 }
+
 .brands {
   margin: 100px auto;
 }
+
 .col-5 {
   width: 160px;
 }
+
 .col-5 img {
   width: 100%;
   cursor: pointer;
@@ -682,13 +737,16 @@ h4 {
   font-size: 14px;
   padding: 60px 0 20px;
 }
+
 .footer p {
   color: #8a8a8a;
 }
+
 .footer h3 {
   color: #fff;
   margin-bottom: 20px;
 }
+
 .footer-col-1,
 .footer-col-2,
 .footer-col-3,
@@ -705,23 +763,28 @@ h4 {
   flex: 1;
   text-align: center;
 }
+
 .footer-col-2 img {
   width: 180px;
   margin-bottom: 20px;
   background-color: white;
   border-radius: 50%;
 }
+
 .footer-col-3,
 .footer-col-4 {
   flex-basis: 12%;
   text-align: center;
 }
+
 ul {
   list-style-type: none;
 }
+
 .app-logo {
   margin-top: 20px;
 }
+
 .app-logo img {
   width: 140px;
 }
@@ -732,9 +795,11 @@ ul {
   height: 1px;
   margin: 20px 0;
 }
+
 .copyright {
   text-align: center;
 }
+
 .menu-icon {
   width: 28px;
   margin-left: 20px;
@@ -752,12 +817,15 @@ select {
   border: 1px solid #da70d6;
   box-shadow: 5px 5px 5px #da70d6;
 }
+
 select:focus {
   color: rgb(141, 38, 138);
 }
+
 .page-btn {
   margin: 0 auto 80px;
 }
+
 .page-btn span {
   text-align: center;
   line-height: 40px;
@@ -768,6 +836,7 @@ select:focus {
   margin-left: 10px;
   cursor: pointer;
 }
+
 .page-btn span:hover {
   background: #da70d6;
   color: #fff;
@@ -828,8 +897,8 @@ td:last-child {
 th:last-child {
   text-align: right;
 }
-/* Account Page */
 
+/* Account Page */
 .account-page {
   padding: 50px 0;
   background: radial-gradient(#fff, #ffd6d6);
@@ -893,7 +962,7 @@ form a {
   height: 100%;
   position: fixed;
   /*untuk hidden*/
-  right: -250px; 
+  right: -250px;
   top: 0;
   background: #da70d6;
   z-index: 2;
