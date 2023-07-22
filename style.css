@@ -161,7 +161,7 @@ h4 {
 }
 
 .rating .fa {
-  color: #da70d6;
+  color: gold;
 }
 
 .col-4:hover {
@@ -633,7 +633,7 @@ p {
 
 .col-4 img {
   width: 100%;
-  height: 280px;
+  height: 100%;
 }
 
 .title {
