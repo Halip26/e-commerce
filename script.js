@@ -1,26 +1,28 @@
-let menuBtn = document.getElementById("menuBtn");
-let sideNav = document.getElementById("sideNav");
-let menu = document.getElementById("menu");
+const menuBtn = document.getElementById("menuBtn");
+const sideNav = document.getElementById("sideNav");
+const menu = document.getElementById("menu");
 
-//sideNav.style.right== "-250px";
-menuBtn.onclick = function () {
-  if (sideNav.style.right == "-250px") {
+sideNav.style.right = "-250px";
+
+function toggleMenu() {
+  if (sideNav.style.right === "-250px") {
     sideNav.style.right = "0";
     menu.src = "images/close.png";
   } else {
     sideNav.style.right = "-250px";
     menu.src = "images/menu.png";
   }
-};
+}
+
+menuBtn.addEventListener("click", toggleMenu);
 
 function openImg(element) {
   window.open(element.src);
 }
 
-// typing effect
-let text = document.getElementById("text");
+const text = document.getElementById("text");
 let i = 0;
-let t = "Give yourself \n a new style this year";
+const t = "Give yourself a new style this year";
 
 function typing() {
   if (i < t.length) {
@@ -35,3 +37,8 @@ function typing() {
 }
 
 typing();
+
+// for zoomin effect when click
+function zoomIn(element) {
+  element.classList.toggle("zoom-in");
+}

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>E-Commerce</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- disini untuk header dari e-commerce -->
-    <div class="header">
+    <div class="header" id="home">
       <div class="container">
         <div class="navbar">
           <div class="logo">
@@ -21,32 +21,38 @@
               <img src="images/logo.png" alt="" width="125px"
             /></a>
           </div>
-          <nav>
-            <ul id="MenuItems">
-              <li><a href="index.html">Home</a></li>
+          <nav id="menuItems">
+            <ul>
+              <li><a href="#home">Home</a></li>
               <li><a href="products.html">Products</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
               <li><a href="account.html">Account</a></li>
             </ul>
+            <a href="cart.html"
+              ><img src="images/cart.png" alt="" width="30px" height="30px"
+            /></a>
           </nav>
-          <a href="cart.html"
-            ><img src="images/cart.png" alt="" width="30px" height="30px"
-          /></a>
-
-          <div id="menuBtn">
-            <img src="images/menu.png" id="menu" />
-          </div>
+        </div>
+        <!-- 3 lines menu button -->
+        <div id="menuBtn">
+          <img id="menu" src="images/menu.png" />
         </div>
 
         <div id="sideNav">
           <nav>
-            <ul id="MenuItems">
-              <li><a href="index.html">Home</a></li>
+            <ul>
+              <li><a href="#home">Home</a></li>
               <li><a href="products.html">Products</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
               <li><a href="account.html">Account</a></li>
+              <br />
+              <li>
+                <a href="cart.html"
+                  ><img src="images/cart.png" alt="" width="30px" height="30px"
+                /></a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -54,9 +60,11 @@
         <div class="row">
           <div class="col-2">
             <h1 id="text" onload="typing()"></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Excepturi quam hic suscipit odit qui? Fugiat, sit ducimus.</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-              Voluptas rerum maiores animi officiis
+              Ducimus rerum, quibusdam rem quidem assumenda natus odit facilis
+              saepe? Ratione, quidem suscipit!
             </p>
             <a href="" class="btn">Explore Now &#8594;</a>
           </div>
@@ -74,16 +82,66 @@
     <!----- Featurd Categories Featurd Products--------->
     <div class="small-container">
       <h2 class="title">Featured Products</h2>
+      <div class="row"><h3>Ceue Section Products :</h3></div>
+      <!-- 1st Row -->
       <div class="row">
-        <div class="col-4">
-          <img
-            src="images/product-1.jpg"
-            alt=""
-            onclick="openImg(this)"
-            id="image"
-          />
+        <!-- product 1 -->
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-1.jpg" alt="product-1.jpg" />
+          <h4>Tas Ceue</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rp. 300.000,-</p>
+        </div>
+        <!-- product 2 -->
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-2.jpg" alt="product-2.jpg" />
+          <h4>Tas Ceue 2</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rp. 350.000,-</p>
+        </div>
+        <!-- product 3 -->
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-3.jpg" alt="product-3.jpg" />
+          <h4>Sepatu Ceue</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rp. 400.000,-</p>
+        </div>
+        <!-- product 4 -->
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-4.jpg" alt="product-4.jpg" />
+          <h4>Kacamata Ceue</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rp. 400.000,-</p>
+        </div>
 
-          <h4>Fashion Trends</h4>
+        <!-- product 6 -->
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-6.jpg" alt="product-6.jpg" />
+          <h4>Tas Ceue</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -91,70 +149,56 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star-o"></i>
           </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img
-            id="image"
-            src="images/product-2.jpg"
-            alt=""
-            onclick="openImg(this)"
-          />
-          <h4>Fashion Trends</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img
-            src="images/product-3.jpg"
-            alt=""
-            onclick="openImg(this)"
-            id="image"
-          />
-          <h4>Fashion Trends</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img
-            src="images/product-4.jpg"
-            alt=""
-            onclick="openImg(this)"
-            id="image"
-          />
-          <h4>Fashion Trends</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
+          <p>Rp. 560.000,-</p>
         </div>
       </div>
-      <h2 class="title">Latest Products</h2>
+
+      <div class="row"><h3>Cuowo Section Products :</h3></div>
+      <!-- 2nd Row -->
       <div class="row">
-        <div class="col-4">
-          <img
-            src="images/product-5.jpg"
-            alt=""
-            onclick="openImg(this)"
-            id="image"
-          />
-          <h4>Fashion Trends</h4>
+        <!-- product 5 -->
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-5.jpg" alt="product-5.jpg" />
+          <h4>Sepatu Couwo</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rp. 400.000,-</p>
+        </div>
+        <!-- product 7 -->
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-7.jpg" alt="product-7.jpg" />
+          <h4>Headphones Kw2</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rp. 400.000,-</p>
+        </div>
+        <!-- product 8 -->
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-8.jpg" alt="product-8.jpg" />
+          <h4>Kacamata Cuowo</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rp. 400.000,-</p>
+        </div>
+        <!-- product 9 -->
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-9.jpg" alt="product-9.jpg" />
+          <h4>Sepatu Cuowo</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -162,50 +206,12 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star-o"></i>
           </div>
-          <p>$50.00</p>
+          <p>Rp. 300.000,-</p>
         </div>
-        <div class="col-4">
-          <img
-            src="images/product-6.jpg"
-            alt=""
-            onclick="openImg(this)"
-            id="image"
-          />
-          <h4>Fashion Trends</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img
-            src="images/product-7.jpg"
-            alt=""
-            onclick="openImg(this)"
-            id="image"
-          />
-          <h4>Fashion Trends</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img
-            src="images/product-8.jpg"
-            alt=""
-            onclick="openImg(this)"
-            id="image"
-          />
-          <h4>Fashion Trends</h4>
+        <!-- product 10 -->
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-10.jpg" alt="product-10.jpg" />
+          <h4>Apple Watch</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -213,18 +219,12 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star-o"></i>
           </div>
-          <p>$50.00</p>
+          <p>Rp. 450.000,-</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-4">
-          <img
-            src="images/product-9.jpg"
-            alt=""
-            onclick="openImg(this)"
-            id="image"
-          />
-          <h4>Fashion Trends</h4>
+        <!-- product 11 -->
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-11.jpg" alt="product-11.jpg" />
+          <h4>Ransel Cuowo</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -232,50 +232,12 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star-o"></i>
           </div>
-          <p>$50.00</p>
+          <p>Rp. 300.000,-</p>
         </div>
-        <div class="col-4">
-          <img
-            src="images/product-10.jpg"
-            alt=""
-            onclick="openImg(this)"
-            id="image"
-          />
-          <h4>Fashion Trends</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img
-            src="images/product-11.jpg"
-            alt=""
-            onclick="openImg(this)"
-            id="image"
-          />
-          <h4>Fashion Trends</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img
-            src="images/product-12.jpg"
-            alt=""
-            onclick="openImg(this)"
-            id="image"
-          />
-          <h4>Fashion Trends</h4>
+        <!-- product 12 -->
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-12.jpg" alt="product-12.jpg" />
+          <h4>X-box Joystick</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -283,14 +245,15 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star-o"></i>
           </div>
-          <p>$50.00</p>
+          <p>Rp. 300.000,-</p>
         </div>
       </div>
     </div>
-    
-    <!------Offer Testimonial  ------>
+
+    <!------Offer Testimonial------>
     <div class="testimonial">
       <div class="small-container">
+        <h2 class="title">Testimonials</h2>
         <div class="row">
           <div class="col-3">
             <i class="fa fa-quote-left"></i>
@@ -408,7 +371,15 @@
         </div>
       </div>
     </div>
+
     <!-- Footer -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#000"
+        fill-opacity="1"
+        d="M0,64L48,90.7C96,117,192,171,288,181.3C384,192,480,160,576,154.7C672,149,768,171,864,192C960,213,1056,235,1152,213.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
     <div class="footer">
       <div class="container">
         <div class="row">
