@@ -159,6 +159,12 @@ p {
   flex-basis: 30%;
   min-width: 250px;
   margin-bottom: 30px;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.col-3.zoom-in {
+  transform: scale(1.5);
 }
 
 .col-3 img {
