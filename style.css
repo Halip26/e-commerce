@@ -294,6 +294,11 @@ h4 {
 svg {
   margin-bottom: -90px;
 }
+
+.svg-account {
+  margin-bottom: -90px;
+  background: radial-gradient(#fff, #ffd6d6);
+}
 /* footer */
 .footer {
   background: #000;
