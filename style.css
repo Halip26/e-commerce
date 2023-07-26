@@ -123,7 +123,11 @@ p {
   padding-top: 100px;
   padding-left: 10px;
   color: white;
-  background: linear-gradient(rgba(243, 115, 211, 0.1), #da70d6);
+  background: linear-gradient(#f373d31a, #da70d6);
+}
+
+#sideNav ul li:last-child {
+  display: block;
 }
 
 #sideNav ul {
@@ -552,7 +556,8 @@ form a {
   padding-top: 50px;
 }
 
-@media (max-width: 421px) {
+/* for mobile devices responsive website */
+@media (max-width: 414px) {
   html {
     width: 100%;
   }
@@ -572,6 +577,11 @@ form a {
 
   #sideNav {
     display: block;
+  }
+
+  #text {
+    font-size: 25px;
+    line-height: normal;
   }
 
   .col-4 {
