@@ -367,8 +367,9 @@ svg {
   text-align: center;
 }
 
-ul {
+ul li {
   list-style-type: none;
+  margin: 5px;
 }
 
 .app-logo {
@@ -556,8 +557,8 @@ form a {
   padding-top: 50px;
 }
 
-/* for mobile devices responsive website */
-@media (max-width: 414px) {
+/* for mobile devices to make it responsive website */
+@media screen and (max-width: 414px) {
   html {
     width: 100%;
   }
