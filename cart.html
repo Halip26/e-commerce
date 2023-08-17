@@ -15,9 +15,7 @@
     <div class="container">
       <div class="navbar">
         <div class="logo">
-          <a href="index.html">
-            <img src="images/logo.png" alt="" width="125px"
-          /></a>
+          <img src="images/logo.png" alt="" width="125px" />
         </div>
         <nav id="menuItems">
           <ul>
@@ -32,6 +30,27 @@
           /></a>
         </nav>
       </div>
+      <!-- 3 lines menu button -->
+      <div id="menuBtn">
+        <img id="menu" src="images/menu.png" />
+      </div>
+
+      <div id="sideNav">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li>
+              <a href="cart.html"
+                ><img src="images/cart.png" alt="" width="30px" height="30px"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
     <!-- Cart Items Details -->
@@ -42,6 +61,8 @@
           <th>Quantity</th>
           <th>Subtotal</th>
         </tr>
+
+        <!-- buy 1 -->
         <tr>
           <td>
             <div class="cart-info">
@@ -54,10 +75,10 @@
               </div>
             </div>
           </td>
-          <td><input type="nunber" value="1" /></td>
+          <td><input type="number" value="1" /></td>
           <td>$50.00</td>
         </tr>
-
+        <!-- buy 2 -->
         <tr>
           <td>
             <div class="cart-info">
@@ -70,10 +91,10 @@
               </div>
             </div>
           </td>
-          <td><input type="nunber" value="1" /></td>
+          <td><input type="number" value="1" /></td>
           <td>$50.00</td>
         </tr>
-
+        <!-- buy 2 -->
         <tr>
           <td>
             <div class="cart-info">
@@ -86,7 +107,7 @@
               </div>
             </div>
           </td>
-          <td><input type="nunber" value="1" /></td>
+          <td><input type="number" value="1" /></td>
           <td>$50.00</td>
         </tr>
       </table>
@@ -161,5 +182,6 @@
         <p class="copyright">Copyright &copy; 2023 - Wardrobe.com</p>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
