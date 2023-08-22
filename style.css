@@ -526,16 +526,16 @@ th:last-child {
   font-size: 24px;
 }
 
-.form-btn {
-  display: inline-block;
-}
-
 .form-container form {
   max-width: 300px;
   padding: 0 20px;
   position: absolute;
   top: 90px;
   transition: transform 1s;
+}
+
+.form-btn {
+  display: inline-block;
 }
 
 form input {
