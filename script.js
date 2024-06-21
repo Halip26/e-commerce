@@ -46,5 +46,5 @@ function zoomIn(element) {
 // Get the current year
 const currentYear = new Date().getFullYear();
 
-// Set the current year to the span with id "currnetYear"
+// Set the current year to the span with id "currentYear"
 document.getElementById("currentYear").textContent = currentYear;
