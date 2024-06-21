@@ -42,3 +42,9 @@ typing();
 function zoomIn(element) {
   element.classList.toggle("zoom-in");
 }
+
+// Get the current year
+const currentYear = new Date().getFullYear();
+
+// Set the current year to the span with id "currnetYear"
+document.getElementById("currentYear").textContent = currentYear;

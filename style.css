@@ -331,6 +331,15 @@ svg {
   color: #8a8a8a;
 }
 
+.footer p a {
+  color: crimson;
+  font-weight: bold;
+}
+
+.footer p a:hover {
+  text-decoration: underline;
+}
+
 .footer h3 {
   color: #fff;
   margin-bottom: 20px;
