@@ -16,10 +16,6 @@ function toggleMenu() {
 
 menuBtn.addEventListener("click", toggleMenu);
 
-function openImg(element) {
-  window.open(element.src);
-}
-
 const text = document.getElementById("text");
 let i = 0;
 const t = "Give yourself a new style this year";
@@ -37,6 +33,11 @@ function typing() {
 }
 
 typing();
+
+// open the img in a new window
+function openImg(element) {
+  window.open(element.src);
+}
 
 // for zoomin effect when click
 function zoomIn(element) {
