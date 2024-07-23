@@ -546,24 +546,39 @@ th:last-child {
   display: inline-block;
 }
 
+.form-container label {
+  color: #da70d6;
+}
+
 form input {
   width: 100%;
   height: 30px;
   margin: 10px 0;
   padding: 0 10px;
   border: 1px solid #ccc;
+  outline-color: #da70d6;
+  border-radius: 5px;
+}
+
+form input:hover {
+  border-color: #da70d6;
 }
 
 form .btn {
-  width: 100%;
+  width: 50%;
   border: none;
   cursor: pointer;
   margin: 10px;
+  margin-bottom: 25px;
 }
 
-form a {
-  font-size: 12px;
+form p a {
+  font-size: 13px;
   padding-top: 50px;
+}
+
+form a:hover {
+  color: #da70d6;
 }
 
 /* for mobile devices to make it responsive website */
