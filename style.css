@@ -339,10 +339,12 @@ svg {
 .footer p a {
   color: crimson;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .footer p a:hover {
   text-decoration: underline;
+  font-weight: 700;
 }
 
 .footer h3 {
@@ -388,13 +390,13 @@ ul li {
 
 ul li a {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 300;
   color: #fff;
 }
 
 ul li a:hover {
   text-decoration: underline;
-  color: rgb(13, 146, 255);
+  color: #0d92ff;
 }
 .app-logo {
   margin-top: 20px;
