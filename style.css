@@ -386,6 +386,16 @@ ul li {
   margin: 5px;
 }
 
+ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  color: rgb(13, 146, 255);
+}
 .app-logo {
   margin-top: 20px;
 }
