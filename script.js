@@ -51,3 +51,39 @@ const currentYear = new Date().getFullYear();
 
 // update the value to currentYear automatically
 document.getElementById("currentYear").textContent = currentYear;
+
+// contact form
+(function () {
+  const form = document.getElementById("contactForm");
+  const feedback = document.getElementById("formFeedback");
+
+  if (!form) return;
+
+  function showFeedback(msg, ok = true) {
+    feedback.style.display = "block";
+    feedback.textContent = msg;
+    feedback.style.color = ok ? "#0a0" : "#a00";
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+
+    if (!name || !email || !message) {
+      showFeedback("Lengkapi semua kolom wajib.", false);
+      return;
+    }
+
+    // Simulasi pengiriman — rekayasa saja
+    showFeedback("Mengirim pesan...");
+    setTimeout(() => {
+      showFeedback("Pesan terkirim. Terima kasih, " + name + "!");
+      form.reset();
+      setTimeout(() => {
+        feedback.style.display = "none";
+      }, 5000);
+    }, 900);
+  });
+})();
