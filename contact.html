@@ -55,7 +55,91 @@
     </div>
     <!-- main content element here -->
     <div class="small-container">
-      <h2 class="title">Contact us</h2>
+      <h2 class="title">Contact Us</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="lead">
+            Punya pertanyaan, saran, atau butuh bantuan? Isi formulir di sisi kanan atau hubungi kami melalui informasi berikut.
+          </p>
+
+          <div class="info-card">
+            <h4>Alamat</h4>
+            <p>Jl. Rekayasa No.123, Jakarta, Indonesia</p>
+          </div>
+
+          <div class="info-card">
+            <h4>Email</h4>
+            <p>support@wardrobe.com</p>
+          </div>
+
+          <div class="info-card">
+            <h4>Telepon</h4>
+            <p>+62 812-3456-7890 (Senin—Jumat, 09:00—17:00)</p>
+          </div>
+
+          <div class="info-card">
+            <h4>Ikuti Kami</h4>
+            <p>Facebook · Twitter · Instagram</p>
+          </div>
+
+          <h4>Lokasi (perkiraan)</h4>
+          <div class="map-wrap">
+            <!-- fake / placeholder map - rekayasa -->
+            <iframe
+              title="office-location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0000000000005!2d106.816666!3d-6.200000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMDguMCJTIDEwNsKwNDknMTQuMCJF!5e0!3m2!1sen!2sid!4v0000000000000"
+              width="100%"
+              height="220"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-row">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Nama lengkap" required />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Telepon (opsional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="+62 812-..." />
+            </div>
+
+            <div class="form-row">
+              <label for="reason">Kategori</label>
+              <select id="reason" name="reason">
+                <option value="general">Umum</option>
+                <option value="order">Order & Pengiriman</option>
+                <option value="product">Produk</option>
+                <option value="returns">Pengembalian</option>
+                <option value="other">Lainnya</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Kirim Pesan</button>
+              <button type="reset" class="btn-secondary">Reset</button>
+            </div>
+
+            <div id="formFeedback" aria-live="polite" class="form-feedback" style="display:none"></div>
+          </form>
+        </div>
+      </div>
     </div>
 
     <!-- svg waves -->
@@ -117,6 +201,7 @@
         </p>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
