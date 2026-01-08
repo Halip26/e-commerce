@@ -398,6 +398,114 @@ ul li a:hover {
   text-decoration: underline;
   color: #0d92ff;
 }
+
+/* Contact page specific styles */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  margin: 20px 0 60px;
+}
+
+.contact-info {
+  padding: 6px 12px;
+}
+
+.contact-info .lead {
+  margin-bottom: 18px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.info-card {
+  background: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(12, 12, 12, 0.04);
+  margin-bottom: 12px;
+}
+
+.map-wrap iframe {
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 8px 28px rgba(12, 12, 12, 0.06);
+}
+
+.form-row {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+  padding: 10px 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.btn-primary {
+  background: #da70d6;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+}
+
+.btn-secondary {
+  background: #f2f2f2;
+  color: #333;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-feedback {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .navbar {
+    padding-top: 14px;
+  }
+}
+
 .app-logo {
   margin-top: 20px;
 }
